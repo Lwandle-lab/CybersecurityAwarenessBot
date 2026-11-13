@@ -1,6 +1,11 @@
-﻿//==========================================================================
-                          //CHATBOTFORMDESIGNER
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+
 //==========================================================================
+                        //CHATBOTFORMDESIGNER
+//==========================================================================
+
 namespace CybersecurityChatbotGUI
 {
     partial class ChatbotForm
@@ -19,7 +24,7 @@ namespace CybersecurityChatbotGUI
 
         //1. Required method for Designer support - do not modify the contents
         // of this method with the code editor.
-        private void InitializeComponent() 
+        private void InitializeComponent()
         {
             pnlChat = new Panel();
             rtbChat = new RichTextBox();
@@ -33,16 +38,18 @@ namespace CybersecurityChatbotGUI
             pnlHeader.SuspendLayout();
             pnlInput.SuspendLayout();
             SuspendLayout();
-            //2.
+            // 
             // pnlChat
             // 
             pnlChat.BackColor = Color.FromArgb(15, 23, 42);
             pnlChat.Controls.Add(rtbChat);
             pnlChat.Dock = DockStyle.Fill;
+            pnlChat.Location = new Point(0, 147);
             pnlChat.Name = "pnlChat";
             pnlChat.Padding = new Padding(16, 12, 16, 12);
+            pnlChat.Size = new Size(900, 485);
             pnlChat.TabIndex = 0;
-            //3. 
+            // 
             // rtbChat
             // 
             rtbChat.BackColor = Color.FromArgb(15, 23, 42);
@@ -50,24 +57,28 @@ namespace CybersecurityChatbotGUI
             rtbChat.Dock = DockStyle.Fill;
             rtbChat.Font = new Font("Segoe UI", 11F);
             rtbChat.ForeColor = Color.FromArgb(226, 232, 240);
+            rtbChat.Location = new Point(16, 12);
             rtbChat.Name = "rtbChat";
             rtbChat.ReadOnly = true;
             rtbChat.ScrollBars = RichTextBoxScrollBars.Vertical;
+            rtbChat.Size = new Size(868, 461);
             rtbChat.TabIndex = 0;
             rtbChat.TabStop = false;
             rtbChat.Text = "";
-            //4. 
+            rtbChat.TextChanged += rtbChat_TextChanged;
+            // 
             // pnlHeader
             // 
             pnlHeader.BackColor = Color.FromArgb(17, 28, 46);
             pnlHeader.Controls.Add(lblAscii);
             pnlHeader.Controls.Add(lblSubtitle);
             pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.Location = new Point(0, 0);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(900, 175);
+            pnlHeader.Size = new Size(900, 147);
             pnlHeader.TabIndex = 1;
             pnlHeader.Resize += pnlHeader_Resize;
-            //5. 
+            // 
             // lblAscii
             // 
             lblAscii.AutoSize = true;
@@ -77,28 +88,30 @@ namespace CybersecurityChatbotGUI
             lblAscii.Name = "lblAscii";
             lblAscii.Size = new Size(0, 14);
             lblAscii.TabIndex = 0;
-            //6. 
+            // 
             // lblSubtitle
             // 
             lblSubtitle.Dock = DockStyle.Bottom;
             lblSubtitle.Font = new Font("Segoe UI", 9.5F);
             lblSubtitle.ForeColor = Color.FromArgb(148, 163, 184);
+            lblSubtitle.Location = new Point(0, 117);
             lblSubtitle.Name = "lblSubtitle";
             lblSubtitle.Size = new Size(900, 30);
             lblSubtitle.TabIndex = 1;
             lblSubtitle.Text = "Ask me about passwords, phishing, safe browsing, scams and privacy. Type 'help' for topics.";
             lblSubtitle.TextAlign = ContentAlignment.MiddleCenter;
-            //7. 
+            // 
             // pnlInput
             // 
             pnlInput.BackColor = Color.FromArgb(17, 28, 46);
             pnlInput.Controls.Add(txtInput);
             pnlInput.Controls.Add(btnSend);
             pnlInput.Dock = DockStyle.Bottom;
+            pnlInput.Location = new Point(0, 632);
             pnlInput.Name = "pnlInput";
             pnlInput.Size = new Size(900, 68);
             pnlInput.TabIndex = 2;
-            //8. 
+            // 
             // txtInput
             // 
             txtInput.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -110,7 +123,7 @@ namespace CybersecurityChatbotGUI
             txtInput.Name = "txtInput";
             txtInput.Size = new Size(750, 29);
             txtInput.TabIndex = 0;
-            //9. 
+            // 
             // btnSend
             // 
             btnSend.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -127,7 +140,7 @@ namespace CybersecurityChatbotGUI
             btnSend.Text = "Send";
             btnSend.UseVisualStyleBackColor = false;
             btnSend.Click += btnSend_Click;
-            //10. 
+            // 
             // ChatbotForm
             // 
             AcceptButton = btnSend;

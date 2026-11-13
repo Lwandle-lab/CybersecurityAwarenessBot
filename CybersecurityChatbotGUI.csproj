@@ -1,17 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+	
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net10.0-windows</TargetFramework>
-		<RootNamespace>CybersecurityChatbotGUI</RootNamespace>
+
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
+
+		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>
+
+		<RootNamespace>CybersecurityAwarenessBot</RootNamespace>
+		<AssemblyName>CybersecurityAwarenessBot</AssemblyName>
 	</PropertyGroup>
 
-	<!-- Copies everything in the Assets folder next to the .exe on build -->
 	<ItemGroup>
-		<None Update="Assets\**">
+		<!-- MySQL connector used by the task assistant (Task 1) -->
+		<PackageReference Include="MySqlConnector" Version="2.6.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Copy the settings file and the voice greeting next to the built .exe -->
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.local.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Audio\**\*">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>

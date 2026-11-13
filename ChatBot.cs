@@ -6,7 +6,11 @@
 //It has no GUI code: the form passes in what the user typed and shows whatever ChatBot returns.
 //The flow matches Part 1: welcome ->
 // name capture  -> personalised greeting -> question and answer
-// loop -> goodbye. Part 2 adds memory, sentiment and conversation flow.
+// loop -> goodbye. Part 2 and Part 3 adds memory, sentiment and conversation flow.
+
+using CybersecurityAwarenessBot.Data;
+using CybersecurityAwarenessBot.Services;
+using System.Linq;
 
 namespace CybersecurityChatbotGUI
 {
@@ -33,6 +37,10 @@ namespace CybersecurityChatbotGUI
         private readonly MemoryStore _memory = new();
         private readonly SentimentDetector _sentiment = new();
         private readonly KeywordResponder _responder;
+        private readonly QuizService _quiz = new();
+        private readonly ActivityLog _activityLog = new();
+        private readonly NlpEngine _nlp = new();
+
         private Stage _stage = Stage.AwaitingName;
 
         private readonly string[] _followUpPhrases =
@@ -116,13 +124,77 @@ namespace CybersecurityChatbotGUI
         {
             string lower = input.Trim().ToLowerInvariant().Replace('\u2019', '\'');
 
+            if (_quiz.IsActive)
+            {
+                if (int.TryParse(lower, out int answer))
+                {
+                    bool correct = _quiz.Submit(answer - 1);
+
+                    string result = correct
+                        ? "Correct!"
+                        : $" Incorrect. {_quiz.Current.Explanation}";
+
+                    if (!_quiz.MoveNext())
+                    {
+                        _activityLog.Add($"Finished quiz with score {_quiz.Score}/{_quiz.TotalQuestions}");
+
+                        return $"{result}\n\nFinal Score: {_quiz.Score}/{_quiz.TotalQuestions}\n{_quiz.FinalMessage()}";
+                    }
+
+                    return $"{result}\n\n{_quiz.Current.Text}\n" +
+                        string.Join("\n",
+                             _quiz.Current.Options.Select((option, index) =>
+                                $"{index + 1}. {option}"));
+                }
+            }
+
+            if (lower == "quiz" || lower == "start quiz")
+            {
+                _activityLog.Add("Started quiz");
+
+                _quiz.Start();
+
+                return $"{_quiz.Current.Text}\n" +
+                       string.Join("\n",
+                           _quiz.Current.Options.Select((option, index) =>
+                               $"{index + 1}. {option}"));
+            }
+            if (lower == "what have you done for me" ||
+                lower == "activity log" ||
+                lower == "show log" ||
+                lower == "recent actions")
+            {
+                var entries = _activityLog.Recent(5);
+
+                if (entries.Count == 0)
+                {
+                    return "No actions have been recorded yet.";
+                }
+
+                return string.Join("\n", entries.Select(e => e.Display));
+            }
+
+            NlpResult nlp = _nlp.Analyse(input);
+
+            if (nlp.Intent == Intent.ShowActivityLog)
+            {
+                List<ActivityEntry> entries = _activityLog.Recent(10);
+
+                if (entries.Count == 0)
+                    return "No activity recorded yet.";
+
+                return string.Join("\n", entries.Select(e => e.Display));
+            }
+
             if (lower == "help")
             {
+               
                 return HelpText;
             }
 
             if (lower == "hi" || lower == "hello" || lower == "hey")
             {
+                _activityLog.Add("Used chatbot greeting");
                 return $"Hello {_memory.Name}! Ask me about {KeywordResponder.TopicList}.";
             }
 

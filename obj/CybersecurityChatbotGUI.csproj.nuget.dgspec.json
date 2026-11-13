@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityChatbotGUI.csproj": {}
+    "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\CybersecurityChatbotGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityChatbotGUI.csproj": {
+    "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\CybersecurityChatbotGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityChatbotGUI.csproj",
-        "projectName": "CybersecurityChatbotGUI",
-        "projectPath": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityChatbotGUI.csproj",
+        "projectUniqueName": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\CybersecurityChatbotGUI.csproj",
+        "projectName": "CybersecurityAwarenessBot",
+        "projectPath": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\CybersecurityChatbotGUI.csproj",
         "packagesPath": "C:\\Users\\Mlindoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\obj\\",
+        "outputPath": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,6 +52,12 @@
         "net10.0-windows": {
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.6.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -67,11 +73,11 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.404/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

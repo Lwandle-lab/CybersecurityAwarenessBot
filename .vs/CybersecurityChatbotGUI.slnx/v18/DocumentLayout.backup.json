@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\",
+  "WorkspaceRootPath": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|c:\\users\\mlindoz\\documents\\lwandle iie work\\prog6221_poe_part1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\cybersecuritychatbotgui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|solutionrelative:cybersecuritychatbotgui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|c:\\users\\mlindoz\\documents\\lwandle iie work\\prog6221_poe_part1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\sentimentdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|solutionrelative:sentimentdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|c:\\users\\mlindoz\\documents\\lwandle iie work\\prog6221_poe_part1\\cybersecurityawarenessbot\\cybersecurityawarenessbot\\voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|solutionrelative:voicegreeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|c:\\users\\mlindoz\\documents\\lwandle iie work\\prog6221_poe_part1\\cybersecurityawarenessbot\\cybersecurityawarenessbot_part 3\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{288C0ED7-6584-A73B-9DDE-9842936C1BF3}|CybersecurityChatbotGUI.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,50 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SentimentDetector.cs",
-              "DocumentMoniker": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\SentimentDetector.cs",
-              "RelativeDocumentMoniker": "SentimentDetector.cs",
-              "ToolTip": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\SentimentDetector.cs",
-              "RelativeToolTip": "SentimentDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T13:16:22.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VoiceGreeting.cs",
-              "DocumentMoniker": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\VoiceGreeting.cs",
-              "RelativeDocumentMoniker": "VoiceGreeting.cs",
-              "ToolTip": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\VoiceGreeting.cs",
-              "RelativeToolTip": "VoiceGreeting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T13:16:14.771Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CybersecurityChatbotGUI",
-              "DocumentMoniker": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityChatbotGUI.csproj",
-              "RelativeDocumentMoniker": "CybersecurityChatbotGUI.csproj",
-              "ToolTip": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot\\CybersecurityChatbotGUI.csproj",
-              "RelativeToolTip": "CybersecurityChatbotGUI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-10T13:09:04.686Z",
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Mlindoz\\Documents\\Lwandle IIE work\\PROG6221_POE_PART1\\CybersecurityAwarenessBot\\CybersecurityAwarenessBot_Part 3\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAACQAAAAAnZmZmRkWwOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-13T14:32:05.555Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

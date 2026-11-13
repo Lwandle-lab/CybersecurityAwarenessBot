@@ -1,5 +1,7 @@
+using CybersecurityAwarenessBot.Services;
+
 //=========================================================================
-                                // CHATBOTFORM
+                            // CHATBOTFORM
 //=========================================================================
 
 // The GUI version of the Part 1 console chatbot. This form only handles what the
@@ -8,10 +10,10 @@
 
 namespace CybersecurityChatbotGUI
     {
-        public partial class ChatbotForm : Form
-        {
-            // The ASCII art from Part 1, shown in the header of the window
-            private const string AsciiLogo = @"  
+    public partial class ChatbotForm : Form
+    {
+        // The ASCII art from Part 1, shown in the header of the window
+        private const string AsciiLogo = @"  
    _____           _                _____           _ _   _          _
   / ____|         | |              / ____|         (_) | | |        | |
  | |    _   _  ___| |__   ___ _ __| (___   ___  ___ _| |_| |__  ___ | |__
@@ -43,18 +45,19 @@ namespace CybersecurityChatbotGUI
             _boldFont = new Font(rtbChat.Font, FontStyle.Bold);
 
             // Voice greeting (plays in the background)
-            string? voiceProblem = VoiceGreeting.Play();
-            if (voiceProblem != null)
-            {
-                AppendMessage("Bot", voiceProblem, BotColor);
-            }
+            bool voicePlayed = VoiceGreeting.Play();
 
-            foreach (string line in _chatBot.GetOpeningMessages())
+            AppendMessage("Bot", "Welcome to the Cybersecurity Awareness Bot!", BotColor);
+            AppendMessage("Bot", "Ask me about passwords, phishing, safe browsing, scams and privacy. Type 'help' for topics.", BotColor);
+
+
+            if (!voicePlayed)
             {
-                AppendMessage("Bot", line, BotColor);
+                AppendMessage("Bot", "Voice greeting could not be played.", BotColor);
             }
 
             txtInput.Focus();
+
         }
 
         private void pnlHeader_Resize(object? sender, EventArgs e)
@@ -104,7 +107,6 @@ namespace CybersecurityChatbotGUI
             }
             catch (Exception)
             {
-                // The chatbot must keep working even if something unexpected happens
                 AppendMessage("Bot", "Something went wrong, but I'm still here. Please try again.", BotColor);
             }
         }
@@ -148,6 +150,11 @@ namespace CybersecurityChatbotGUI
                 Close();
             };
             timer.Start();
+        }
+
+        private void rtbChat_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

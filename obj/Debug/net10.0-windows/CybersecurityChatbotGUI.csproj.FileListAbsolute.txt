@@ -16,3 +16,27 @@ C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwar
 C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.genruntimeconfig.cache
 C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot\obj\Debug\net10.0-windows\ref\CybersecurityChatbotGUI.dll
 C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot\obj\Debug\net10.0-windows\Cybersec.FF74B53D.Up2Date
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.csproj.AssemblyReference.cache
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.ChatbotForm.resources
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.csproj.GenerateResource.cache
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.AssemblyInfoInputs.cache
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.AssemblyInfo.cs
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.csproj.CoreCompileInputs.cache
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.sourcelink.json
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\Appsettings.json
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\CybersecurityAwarenessBot.exe
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\CybersecurityAwarenessBot.deps.json
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\CybersecurityAwarenessBot.runtimeconfig.json
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\CybersecurityAwarenessBot.dll
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\CybersecurityAwarenessBot.pdb
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\MySqlConnector.dll
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\Cybersec.FF74B53D.Up2Date
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityAwarenessBot.dll
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\refint\CybersecurityAwarenessBot.dll
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityAwarenessBot.pdb
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\CybersecurityChatbotGUI.genruntimeconfig.cache
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\obj\Debug\net10.0-windows\ref\CybersecurityAwarenessBot.dll
+C:\Users\Mlindoz\Documents\Lwandle IIE work\PROG6221_POE_PART1\CybersecurityAwarenessBot\CybersecurityAwarenessBot_Part 3\bin\Debug\net10.0-windows\Audio\greetings.wav
